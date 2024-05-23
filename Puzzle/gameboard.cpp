@@ -35,6 +35,6 @@ void GameBoard::shuffle()
     static std::mt19937 generator(seed);
 
 //    do {
-    std::shuffle(m_rawBoard.begin(), m_rawBoard.end(), g);
+    std::shuffle(m_rawBoard.begin(), m_rawBoard.end(), generator);
 //    } while (!isBoardValid())
 }
